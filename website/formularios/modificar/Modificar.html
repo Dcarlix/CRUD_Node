@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <title>Modificar Producto</title>
+</head>
+<body style="background-color: #c5c5c5;">
+    <div class="container">
+        <div class="row my-2">
+            <div class="col text-center">
+                <h1>Modificar Producto</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="card" style="background-color: #797979;">
+                    <div class="card-head text-center py-2">
+                        <h1>Informacion del Producto</h1>
+                    </div>
+                    <div class="car-body">
+                        <form class="form p-3" id="formProducto">
+                            <input type="hidden" name="id"class="form-control" id="Id">
+                            <div class="mb-3">
+                                <label for="Nombre" class="form-label fs-4 fw-bold">Nombre</label>
+                                <input type="text" name="name"class="form-control" id="Nombre" placeholder="Nombre del prodcuto">
+                            </div>
+                            <div class="mb-3">
+                                <label for="Precio" class="form-label fs-4 fw-bold">Precio</label>
+                                <input type="number" name="price"class="form-control" id="Precio" placeholder="Precio del prodcuto">
+                            </div>
+                            <div class="mb-3">
+                                <label for="Cantidad" class="form-label fs-4 fw-bold">Cantidad</label>
+                                <input type="number" name="quantity"class="form-control" id="Cantidad" placeholder="Cantidad del prodcuto">
+                            </div>
+                            <div class="mb-3">
+                                <label for="Descripcion" class="form-label fs-4 fw-bold">Descripcion</label>
+                                <input type="text" name="description"class="form-control" id="Descripcion" placeholder="Descripcion del prodcuto">
+                            </div>
+                            <button type="submit" class="btn btn-success fw-bold px-5">Actualizar-Modifcar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <script src="scriptModificar.js"></script>
+</body>
+</html>
